@@ -52,6 +52,7 @@ class Base(object):
     # Stripe webhook credentials
     STRIPE_API_KEY = env('STRIPE_API_KEY')
     STRIPE_WEBHOOK_SECRET = env('STRIPE_WEBHOOK_SECRET')
+    MIGRATE_STRIPE_SUBSCRIPTIONS_ENABLED = env('MIGRATE_STRIPE_SUBSCRIPTIONS_ENABLED')
 
     # Override URL for posting newsletter subscriptions
     POST_DONATE_NEWSLETTER_URL = env('POST_DONATE_NEWSLETTER_URL')
