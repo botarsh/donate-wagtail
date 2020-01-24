@@ -45,6 +45,7 @@ env = environ.Env(
     DJANGO_SECRET_KEY=(str, None),
     DOMAIN_REDIRECT_MIDDLEWARE_ENABLED=(bool, False),
     ENABLE_THUNDERBIRD_REDIRECT=(bool, False),
+    GA_TRACKING_ID=(str, None),
     GITHUB_TOKEN=(str, ''),
     HEROKU_PR_NUMBER=(str, ''),
     HEROKU_BRANCH=(str, ''),
