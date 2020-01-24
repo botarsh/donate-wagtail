@@ -11,8 +11,10 @@ import CopyURL from "./components/copy-url";
 import Accordion from "./components/accordion";
 import "./components/newsletter";
 
-const doNotTrack = navigator.doNotTrack || navigator.msDoNotTrack || window.doNotTrack;
-const allowGA = !doNotTrack || doNotTrack === "no" || doNotTrack === "unspecified";
+const doNotTrack =
+  navigator.doNotTrack || navigator.msDoNotTrack || window.doNotTrack;
+const allowGA =
+  !doNotTrack || doNotTrack === "no" || doNotTrack === "unspecified";
 
 function fetchEnv(callback) {
   let envReq = new XMLHttpRequest();
